@@ -34,13 +34,15 @@ As far as required DOS version, DOSBox, FreeDOS 1.3, and IBM PC-DOS 3.30 all wor
 
 I used the DOSBox and 86Box emulators for testing. The code is fairly straightforward, so other emulators are likely to work too, though the sound may or may not work.
 
+Note that the dict.txt file is too big to fit on even a 760KB floppy. If you need a smaller dictionary, use "tinydict.txt" instead (you will have to rename it to dict.txt on the floppy disk in order for Doggle to find it). It's the same as dict.txt but only has words that are 9 letters or less and should take around 500 KiB of space. If even that's too big, you'll have to make your own dictionary or omit it.
+
 ## License and Copyright
 
 For doggle.c and README.md:  
 Copyright (c) 2023 Aaron Rainbolt. Licensed under the [MIT License](https://opensource.org/license/mit/).
 
-For dict.txt:  
-  dict.txt has been extracted from GNU Aspell and adapted to be smaller and work better as a Boggle dictionary.  
+For dict.txt and tinydict.txt:  
+  The dictionaries have been extracted from GNU Aspell and are adapted to be smaller and work better as a Boggle dictionary.  
   Copyright (c) 2002-2019 Kevin Atkinson and the GNU Aspell contributors. Copyright (c) 2023 Aaron Rainbolt. Licensed under the [GNU Lesser General Public License v2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html).
 
 Doggle is in no way affiliated with Hasbro, the owners of the Boggle trademark.
